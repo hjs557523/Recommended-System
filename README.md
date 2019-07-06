@@ -1,5 +1,5 @@
 # Recommended-System
-短学期项目：  《基于隐语义模型的旅游推荐系统》 javaweb实现
+短学期项目：  《基于隐语义模型的旅游推荐系统》  
 时间规划：  
 2019/7/1：&nbsp;&nbsp;&nbsp;短学期课题选择&nbsp;&nbsp;&#10003;  
 2019/7/2：&nbsp;&nbsp;&nbsp;搭环境+模型训练+python算法编写&nbsp;&nbsp;&#10003;  
