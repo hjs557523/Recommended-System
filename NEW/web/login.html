@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆 - 旅游推荐系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="base/js/baseUtil.js"></script>
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">
+            </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">旅游推荐</a></li>
+            <li><a href="searchTicket.html">点击购票</a></li>
+            <li><a href="index.html">热门景点</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="login.html">登录</a></li>
+            <li><a href="signup.html">注册</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="form-container">
+        <h1>登录
+            <small>没有账号？<a href="signup.html">注册</a></small>
+        </h1>
+        <form>
+            <div class="form-group">
+                <label>用户名</label>
+                <input type="text" class="form-control" id="user_account">
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                <input type="password" class="form-control" id="user_password">
+            </div>
+            <p>忘记密码？</p>
+            <div class="form-group">
+                <button id="loginButton" type="button" class="btn btn-primary btn-block">登录</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="footer">
+    © 2019 基于隐语义模型的旅游推荐系统
+</div>
+</body>
+
+</html>

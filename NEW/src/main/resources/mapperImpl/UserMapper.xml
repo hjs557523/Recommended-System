@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dc.mapper.UserDao">
+
+    <select id="login" parameterType="String" resultType="com.dc.pojo.User">
+        select * from t_user
+        where
+            user_password='${user_password}'
+            and user_account ='${user_account}'
+    </select>
+    <insert id="register" parameterType="String">
+      INSERT INTO `new_net`.`t_user`(`user_account`, `user_password`) VALUES ('${user_account}', '${user_password}');
+    </insert>
+    <select id="isExistAccount" parameterType="String" resultType="com.dc.pojo.User">
+        select * from t_user
+        where
+             user_account ='${user_account}'
+    </select>
+    <select id="isExistId" parameterType="int" resultType="com.dc.pojo.User">
+        select * from t_user
+        where
+             user_id ='${user_id}'
+    </select>
+    <select id="userList" resultType="com.dc.pojo.User">
+        select * from t_user
+    </select>
+    <select id="selectUserId" resultType="com.dc.pojo.User">
+        select * from t_user where user_id=${user_id}
+    </select>
+    <insert id="insertUserByCsv" parameterType="String">
+        INSERT INTO `new_net`.`t_user`(`user_id`, `user_account`, `user_password`) VALUES (${user_id},'${user_account}', '12345678');
+    </insert>
+</mapper>

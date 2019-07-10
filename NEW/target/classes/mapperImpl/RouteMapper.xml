@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dc.mapper.RouteMapper" >
+
+    <resultMap id="BaseResultMap" type="com.dc.pojo.Route" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="train_id" property="trainId" jdbcType="INTEGER" />
+        <result column="station_name" property="stationName" jdbcType="VARCHAR" />
+        <result column="route_seq" property="routeSeq" jdbcType="INTEGER" />
+        <result column="next_distance" property="nextDistance" jdbcType="INTEGER" />
+        <result column="departure_time" property="departureTime" jdbcType="TIMESTAMP" />
+        <result column="arrive_time" property="arriveTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+
+
+    <resultMap id="TrainInfoMap" type="com.dc.pojo.TrainInfo" >
+        <result column="train_id" property="trainId" jdbcType="INTEGER" />
+        <result column="train_num" property="trainNum" jdbcType="VARCHAR" />
+        <result column="asn" property="chufazhan" jdbcType="VARCHAR" />
+        <result column="ars" property="routeSeq1" jdbcType="INTEGER" />
+        <result column="bsn" property="mudizhan" jdbcType="VARCHAR" />
+        <result column="brs" property="routeSeq2" jdbcType="INTEGER" />
+        <result column="departure_time" property="departureTime" jdbcType="TIMESTAMP" />
+        <result column="arrive_time" property="arriveTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+
+    <!--    <resultMap id="TrainTransferInfoMap" type="com.dbsd6th.entity.TrainTransferInfo" >
+            <result column="train_id" property="trainId" jdbcType="INTEGER" />
+            <result column="train_num" property="trainNum" jdbcType="VARCHAR" />
+            <result column="asn" property="chufazhan" jdbcType="VARCHAR" />
+            <result column="bsn" property="mudizhan" jdbcType="VARCHAR" />
+            <result column="departure_time" property="departureTime" jdbcType="TIMESTAMP" />
+            <result column="arrive_time" property="arriveTime" jdbcType="TIMESTAMP" />
+        </resultMap>-->
+
+
+
+    <sql id="Base_Column_List" >
+    id, train_id, station_name, route_seq, next_distance, departure_time, arrive_time
+  </sql>
+
+
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from route
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectStationCountDistance" resultType="java.lang.Integer">
+    select SUM(next_distance)
+    from route
+    where train_id = #{trainId, jdbcType=INTEGER} and route_seq >= #{startSeq, jdbcType=INTEGER}
+    and #{endSeq, jdbcType=INTEGER} > route_seq
+    group by train_id
+  </select>
+
+
+
+    <!--基本查询：根据出发站和目的站以及出发时间查询车次-->
+    <!--上次学长说可以用时间区间去比较，我查阅了一些资料，还是不清楚怎么在这个mapper层里将dao层传过来
+        的date类型的出发时间+1，所以我这样子处理：用SQL的date函数截掉数据库里的datetime的时分秒部分，
+        剩下日期就可以进行相等比较了。或者学长知道怎么写更优，也可以把我的部分注释掉，再写另一种方法-->
+    <select id="selectByStation" resultMap="TrainInfoMap">
+    select  a.train_id,
+            train_num,
+            a.station_name asn,
+            a.route_seq ars,
+            a.departure_time,
+            b.station_name bsn,
+            b.route_seq brs,
+            b.arrive_time
+            from train t left join route a on t.id = a.train_id
+                          left join route b on a.train_id = b.train_id
+    where a.station_name=#{arg0} and
+           b.station_name=#{arg1} and
+           b.route_seq &gt; a.route_seq
+  </select>
+
+
+    <!--高级查询4：子操作1-->
+    <select id="selectTransferStation" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from route
+        where station_name = #{arg0} and
+        train_id not in(
+        select train_id from route
+        where station_name = #{arg1}
+        )
+    </select>
+
+
+    <!--  这部分当时是打算将中转站的全部信息存取起来的，但是感觉用处不大，所以先注释掉
+    <select id="selectTransferStation2" resultMap="TrainTransferInfoMap">
+          select a.id as id1,
+                  b.id as id2,
+                  a.train_id as trainId1,
+                  b.train_id as trainId2,
+                  a.station_name as stationName,
+                  a.route_seq as routeSeq1,
+                  b.route_seq as routeSeq2,
+                  a.departure_time as departureTime1,
+                  b.departure_time as departureTime2,
+                  a.arrive_time as arriveTime1,
+                  b.arrive_time as arriveTime2,
+                  b.next_distance as nextDistance2
+          from route a and route b
+          where trainId1 = #{0} and
+                 trainId2 = #{1} and
+                 a.station_name = b.station_name and
+                 arriveTime1 &lt; departureTime2 and
+                 routeSeq1 &gt; #{2} and
+                 routeSeq2 &lt; #{3}
+      </select>-->
+
+    <!--高级查询4：子操作2-->
+    <select id="selectTransferStation2" resultMap="BaseResultMap">
+        select a.*
+        from route as a ,route as b
+        where a.train_id = #{arg0} and
+               b.train_id = #{arg1} and
+               a.station_name = b.station_name and
+               a.arrive_time &lt; b.departure_time and
+               a.route_seq &gt; #{arg2} and
+               b.route_seq &lt; #{arg3}
+    </select>
+
+    <!--高级查询4：子操作3-->
+    <select id="selectTransferStation3" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from route
+        where train_id = #{arg0} and station_name = #{arg1}
+    </select>
+
+    <select id="getRouteListForCount" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from route
+        where train_id = #{arg0} and route_seq &gt;= #{arg1} and route_seq &lt;= #{arg2}
+    </select>
+
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from route
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.dc.pojo.Route" >
+    insert into route (id, train_id, station_name,
+      route_seq, next_distance, departure_time,
+      arrive_time)
+    values (#{id,jdbcType=INTEGER}, #{trainId,jdbcType=INTEGER}, #{stationName,jdbcType=VARCHAR},
+      #{routeSeq,jdbcType=INTEGER}, #{nextDistance,jdbcType=INTEGER}, #{departureTime,jdbcType=TIMESTAMP},
+      #{arriveTime,jdbcType=TIMESTAMP})
+  </insert>
+    <insert id="insertSelective" parameterType="com.dc.pojo.Route" >
+        insert into route
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="trainId != null" >
+                train_id,
+            </if>
+            <if test="stationName != null" >
+                station_name,
+            </if>
+            <if test="routeSeq != null" >
+                route_seq,
+            </if>
+            <if test="nextDistance != null" >
+                next_distance,
+            </if>
+            <if test="departureTime != null" >
+                departure_time,
+            </if>
+            <if test="arriveTime != null" >
+                arrive_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="trainId != null" >
+                #{trainId,jdbcType=INTEGER},
+            </if>
+            <if test="stationName != null" >
+                #{stationName,jdbcType=VARCHAR},
+            </if>
+            <if test="routeSeq != null" >
+                #{routeSeq,jdbcType=INTEGER},
+            </if>
+            <if test="nextDistance != null" >
+                #{nextDistance,jdbcType=INTEGER},
+            </if>
+            <if test="departureTime != null" >
+                #{departureTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="arriveTime != null" >
+                #{arriveTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.dc.pojo.Route" >
+        update route
+        <set >
+            <if test="trainId != null" >
+                train_id = #{trainId,jdbcType=INTEGER},
+            </if>
+            <if test="stationName != null" >
+                station_name = #{stationName,jdbcType=VARCHAR},
+            </if>
+            <if test="routeSeq != null" >
+                route_seq = #{routeSeq,jdbcType=INTEGER},
+            </if>
+            <if test="nextDistance != null" >
+                next_distance = #{nextDistance,jdbcType=INTEGER},
+            </if>
+            <if test="departureTime != null" >
+                departure_time = #{departureTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="arriveTime != null" >
+                arrive_time = #{arriveTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.dc.pojo.Route" >
+    update route
+    set train_id = #{trainId,jdbcType=INTEGER},
+      station_name = #{stationName,jdbcType=VARCHAR},
+      route_seq = #{routeSeq,jdbcType=INTEGER},
+      next_distance = #{nextDistance,jdbcType=INTEGER},
+      departure_time = #{departureTime,jdbcType=TIMESTAMP},
+      arrive_time = #{arriveTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+    <select id="getStationMessage" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from route
+        where train_id = #{arg0} and route_seq = #{arg1}
+    </select>
+
+</mapper>

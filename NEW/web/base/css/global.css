@@ -1,0 +1,38 @@
+.site-title fieldset {
+    border: none;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: medium;
+    border-top: 1px solid #eee;
+
+}
+
+.site-title fieldset legend {
+    margin-left: 20px;
+    padding: 0 10px;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.dialogAdvancedQuery {
+
+    height: 400px;
+    overflow-y: auto;
+}
+
+.dialogAdvancedQuery .logicalGroup .layui-form-select {
+    width: 65px;
+}
+.dialogAdvancedQuery .relationalGroup .layui-form-select {
+    width: 120px;
+}
+.dialogAdvancedQuery .searchSorting.selected{
+    color: #1E9FFF;
+}
+.auxiliaryGroup >.dialogAdvancedQuery{
+    display: none;
+}
+.layui-btn.hidden,.hidden,.layui-btn.hidden_per{
+    display: none;
+}

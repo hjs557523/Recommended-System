@@ -1,0 +1,2 @@
+[NEW_war_exploded] [WARN] [2019-07-09 12:42:59 ÏÂÎç] [Thread: http-bio-8080-exec-3][ Class:org.springframework.web.servlet.PageNotFound >> Method: org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver.handleHttpRequestMethodNotSupported(DefaultHandlerExceptionResolver.java:198) ]
+WARN:Request method 'GET' not supported

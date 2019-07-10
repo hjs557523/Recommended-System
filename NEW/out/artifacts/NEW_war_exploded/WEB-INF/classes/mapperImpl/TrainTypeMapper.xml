@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dc.mapper.TrainTypeMapper" >
+    <resultMap id="BaseResultMap" type="com.dc.pojo.TrainType">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="stand_num" property="standNum" jdbcType="INTEGER" />
+        <result column="second_seat_num" property="secondSeatNum" jdbcType="INTEGER" />
+        <result column="first_seat_num" property="firstSeatNum" jdbcType="INTEGER" />
+        <result column="business_seat_num" property="businessSeatNum" jdbcType="INTEGER" />
+        <result column="advanced_soft_num" property="advancedSoftNum" jdbcType="INTEGER" />
+        <result column="soft_sleeper_num" property="softSleeperNum" jdbcType="INTEGER" />
+        <result column="highspeed_sleeper_num" property="highspeedSleeperNum" jdbcType="INTEGER" />
+        <result column="hard_sleeper_num" property="hardSleeperNum" jdbcType="INTEGER" />
+        <result column="soft_seat_num" property="softSeatNum" jdbcType="INTEGER" />
+        <result column="hard_seat_num" property="hardSeatNum" jdbcType="INTEGER" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+    id, stand_num, second_seat_num, first_seat_num, business_seat_num, advanced_soft_num,
+    soft_sleeper_num, highspeed_sleeper_num, hard_sleeper_num, soft_seat_num, hard_seat_num
+  </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from train_type
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from train_type
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.dc.pojo.TrainType" >
+    insert into train_type (id, stand_num, second_seat_num,
+      first_seat_num, business_seat_num, advanced_soft_num,
+      soft_sleeper_num, highspeed_sleeper_num, hard_sleeper_num,
+      soft_seat_num, hard_seat_num)
+    values (#{id,jdbcType=INTEGER}, #{standNum,jdbcType=INTEGER}, #{secondSeatNum,jdbcType=INTEGER},
+      #{firstSeatNum,jdbcType=INTEGER}, #{businessSeatNum,jdbcType=INTEGER}, #{advancedSoftNum,jdbcType=INTEGER},
+      #{softSleeperNum,jdbcType=INTEGER}, #{highspeedSleeperNum,jdbcType=INTEGER}, #{hardSleeperNum,jdbcType=INTEGER},
+      #{softSeatNum,jdbcType=INTEGER}, #{hardSeatNum,jdbcType=INTEGER})
+  </insert>
+    <insert id="insertSelective" parameterType="com.dc.pojo.TrainType" >
+        insert into train_type
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="standNum != null" >
+                stand_num,
+            </if>
+            <if test="secondSeatNum != null" >
+                second_seat_num,
+            </if>
+            <if test="firstSeatNum != null" >
+                first_seat_num,
+            </if>
+            <if test="businessSeatNum != null" >
+                business_seat_num,
+            </if>
+            <if test="advancedSoftNum != null" >
+                advanced_soft_num,
+            </if>
+            <if test="softSleeperNum != null" >
+                soft_sleeper_num,
+            </if>
+            <if test="highspeedSleeperNum != null" >
+                highspeed_sleeper_num,
+            </if>
+            <if test="hardSleeperNum != null" >
+                hard_sleeper_num,
+            </if>
+            <if test="softSeatNum != null" >
+                soft_seat_num,
+            </if>
+            <if test="hardSeatNum != null" >
+                hard_seat_num,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="standNum != null" >
+                #{standNum,jdbcType=INTEGER},
+            </if>
+            <if test="secondSeatNum != null" >
+                #{secondSeatNum,jdbcType=INTEGER},
+            </if>
+            <if test="firstSeatNum != null" >
+                #{firstSeatNum,jdbcType=INTEGER},
+            </if>
+            <if test="businessSeatNum != null" >
+                #{businessSeatNum,jdbcType=INTEGER},
+            </if>
+            <if test="advancedSoftNum != null" >
+                #{advancedSoftNum,jdbcType=INTEGER},
+            </if>
+            <if test="softSleeperNum != null" >
+                #{softSleeperNum,jdbcType=INTEGER},
+            </if>
+            <if test="highspeedSleeperNum != null" >
+                #{highspeedSleeperNum,jdbcType=INTEGER},
+            </if>
+            <if test="hardSleeperNum != null" >
+                #{hardSleeperNum,jdbcType=INTEGER},
+            </if>
+            <if test="softSeatNum != null" >
+                #{softSeatNum,jdbcType=INTEGER},
+            </if>
+            <if test="hardSeatNum != null" >
+                #{hardSeatNum,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.dc.pojo.TrainType" >
+        update train_type
+        <set >
+            <if test="standNum != null" >
+                stand_num = #{standNum,jdbcType=INTEGER},
+            </if>
+            <if test="secondSeatNum != null" >
+                second_seat_num = #{secondSeatNum,jdbcType=INTEGER},
+            </if>
+            <if test="firstSeatNum != null" >
+                first_seat_num = #{firstSeatNum,jdbcType=INTEGER},
+            </if>
+            <if test="businessSeatNum != null" >
+                business_seat_num = #{businessSeatNum,jdbcType=INTEGER},
+            </if>
+            <if test="advancedSoftNum != null" >
+                advanced_soft_num = #{advancedSoftNum,jdbcType=INTEGER},
+            </if>
+            <if test="softSleeperNum != null" >
+                soft_sleeper_num = #{softSleeperNum,jdbcType=INTEGER},
+            </if>
+            <if test="highspeedSleeperNum != null" >
+                highspeed_sleeper_num = #{highspeedSleeperNum,jdbcType=INTEGER},
+            </if>
+            <if test="hardSleeperNum != null" >
+                hard_sleeper_num = #{hardSleeperNum,jdbcType=INTEGER},
+            </if>
+            <if test="softSeatNum != null" >
+                soft_seat_num = #{softSeatNum,jdbcType=INTEGER},
+            </if>
+            <if test="hardSeatNum != null" >
+                hard_seat_num = #{hardSeatNum,jdbcType=INTEGER},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.dc.pojo.TrainType" >
+    update train_type
+    set stand_num = #{standNum,jdbcType=INTEGER},
+      second_seat_num = #{secondSeatNum,jdbcType=INTEGER},
+      first_seat_num = #{firstSeatNum,jdbcType=INTEGER},
+      business_seat_num = #{businessSeatNum,jdbcType=INTEGER},
+      advanced_soft_num = #{advancedSoftNum,jdbcType=INTEGER},
+      soft_sleeper_num = #{softSleeperNum,jdbcType=INTEGER},
+      highspeed_sleeper_num = #{highspeedSleeperNum,jdbcType=INTEGER},
+      hard_sleeper_num = #{hardSleeperNum,jdbcType=INTEGER},
+      soft_seat_num = #{softSeatNum,jdbcType=INTEGER},
+      hard_seat_num = #{hardSeatNum,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

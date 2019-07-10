@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dc.mapper.TrainMapper" >
+    <resultMap id="BaseResultMap" type="com.dc.pojo.Train" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="start_time" property="startTime" jdbcType="TIMESTAMP" />
+        <result column="end_time" property="endTime" jdbcType="TIMESTAMP" />
+        <result column="start_station_name" property="startStationName" jdbcType="VARCHAR" />
+        <result column="end_station_name" property="endStationName" jdbcType="VARCHAR" />
+        <result column="total_distance" property="totalDistance" jdbcType="DOUBLE" />
+        <result column="train_type_id" property="trainTypeId" jdbcType="INTEGER" />
+        <result column="total_station_num" property="totalStationNum" jdbcType="INTEGER" />
+        <result column="train_num" property="trainNum" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+    id, start_time, end_time, start_station_name, end_station_name, total_distance, train_type_id,
+    total_station_num, train_num
+  </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from train
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectAll" resultMap="BaseResultMap" >
+        select
+        <include refid="Base_Column_List" />
+        from train
+    </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from train
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.dc.pojo.Train" >
+    insert into train (id, start_time, end_time,
+      start_station_name, end_station_name, total_distance,
+      train_type_id, total_station_num, train_num
+      )
+    values (#{id,jdbcType=INTEGER}, #{startTime,jdbcType=TIMESTAMP}, #{endTime,jdbcType=TIMESTAMP},
+      #{startStationName,jdbcType=VARCHAR}, #{endStationName,jdbcType=VARCHAR}, #{totalDistance,jdbcType=DOUBLE},
+      #{trainTypeId,jdbcType=INTEGER}, #{totalStationNum,jdbcType=INTEGER}, #{trainNum,jdbcType=VARCHAR}
+      )
+  </insert>
+    <insert id="insertSelective" parameterType="com.dc.pojo.Train" >
+        insert into train
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="startTime != null" >
+                start_time,
+            </if>
+            <if test="endTime != null" >
+                end_time,
+            </if>
+            <if test="startStationName != null" >
+                start_station_name,
+            </if>
+            <if test="endStationName != null" >
+                end_station_name,
+            </if>
+            <if test="totalDistance != null" >
+                total_distance,
+            </if>
+            <if test="trainTypeId != null" >
+                train_type_id,
+            </if>
+            <if test="totalStationNum != null" >
+                total_station_num,
+            </if>
+            <if test="trainNum != null" >
+                train_num,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="startTime != null" >
+                #{startTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="endTime != null" >
+                #{endTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="startStationName != null" >
+                #{startStationName,jdbcType=VARCHAR},
+            </if>
+            <if test="endStationName != null" >
+                #{endStationName,jdbcType=VARCHAR},
+            </if>
+            <if test="totalDistance != null" >
+                #{totalDistance,jdbcType=DOUBLE},
+            </if>
+            <if test="trainTypeId != null" >
+                #{trainTypeId,jdbcType=INTEGER},
+            </if>
+            <if test="totalStationNum != null" >
+                #{totalStationNum,jdbcType=INTEGER},
+            </if>
+            <if test="trainNum != null" >
+                #{trainNum,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.dc.pojo.Train" >
+        update train
+        <set >
+            <if test="startTime != null" >
+                start_time = #{startTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="endTime != null" >
+                end_time = #{endTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="startStationName != null" >
+                start_station_name = #{startStationName,jdbcType=VARCHAR},
+            </if>
+            <if test="endStationName != null" >
+                end_station_name = #{endStationName,jdbcType=VARCHAR},
+            </if>
+            <if test="totalDistance != null" >
+                total_distance = #{totalDistance,jdbcType=DOUBLE},
+            </if>
+            <if test="trainTypeId != null" >
+                train_type_id = #{trainTypeId,jdbcType=INTEGER},
+            </if>
+            <if test="totalStationNum != null" >
+                total_station_num = #{totalStationNum,jdbcType=INTEGER},
+            </if>
+            <if test="trainNum != null" >
+                train_num = #{trainNum,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.dc.pojo.Train" >
+    update train
+    set start_time = #{startTime,jdbcType=TIMESTAMP},
+      end_time = #{endTime,jdbcType=TIMESTAMP},
+      start_station_name = #{startStationName,jdbcType=VARCHAR},
+      end_station_name = #{endStationName,jdbcType=VARCHAR},
+      total_distance = #{totalDistance,jdbcType=DOUBLE},
+      train_type_id = #{trainTypeId,jdbcType=INTEGER},
+      total_station_num = #{totalStationNum,jdbcType=INTEGER},
+      train_num = #{trainNum,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+
+
+    <select id="selectByTrainNum" resultMap="BaseResultMap" parameterType="java.lang.String" >
+        select
+        <include refid="Base_Column_List" />
+        from train
+        where train_num = #{trainNum,jdbcType=VARCHAR}
+    </select>
+</mapper>

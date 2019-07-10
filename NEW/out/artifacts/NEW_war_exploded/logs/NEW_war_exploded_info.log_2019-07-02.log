@@ -1,0 +1,1050 @@
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:51] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | 
+Root WebApplicationContext: initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:51] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing Root WebApplicationContext: startup date [Tue Jul 02 18:24:51 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:51] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/spring-mybatis.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:52] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | 
+Loading properties file from class path resource [jdbc.properties]
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:53] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | 
+Root WebApplicationContext: initialization completed in 2013 ms
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:53] org.springframework.web.servlet.FrameworkServlet.initServletBean(479) | 
+FrameworkServlet 'springMVC': initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:53] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 18:24:53 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:53] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/springMvc.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAllPOST],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAllPost(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectAllCommentByScenicId],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectAllCommentByScenicId(int)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleById],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleById(int)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAll(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/commitComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.commitComment(int,int,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/scenicList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.scenicList()
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/addArticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.addArticle(int,java.lang.String,java.lang.String,int)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.register(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/userList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.userList()
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.login(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/isexist],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.isexist(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/insertUserByCsv],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.insertUserByCsv()
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs/{swaggerGroup}/{apiDeclaration}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ApiListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getApiListing(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ResourceListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getResourceListing(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:54] org.hibernate.validator.internal.util.Version.<clinit>(30) | 
+HV000001: Hibernate Validator 5.2.4.Final
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/swagger/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(33) | 
+Context refreshed
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(46) | 
+Found custom SwaggerSpringMvcPlugins
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(50) | 
+initializing plugin bean customImplementation
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scan(55) | 
+Scanning for api listing references
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAllPost was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAllPost belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAllPost
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectAllCommentByScenicId was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectAllCommentByScenicId belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectAllCommentByScenicId
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleById was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleById belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleById
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAll was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAll belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAll
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method commitComment was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: commitComment belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:commitComment
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method scenicList was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: scenicList belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:scenicList
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method addArticle was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: addArticle belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:addArticle
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method register was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:register
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method userList was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: userList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:userList
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method login was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:login
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method isexist was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: isexist belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:isexist
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method insertUserByCsv was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: insertUserByCsv belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:55] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:insertUserByCsv
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:56] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:56] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:56] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/article-controller Description: article-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:56] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:57] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(89) | 
+Added a resource listing with (2) api resources: 
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:57] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  Article Controller at location: /api-docs/default/article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:57] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  User Controller at location: /api-docs/default/user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 18:24:57] org.springframework.web.servlet.FrameworkServlet.initServletBean(498) | 
+FrameworkServlet 'springMVC': initialization completed in 3928 ms
+[NEW_war_exploded] [INFO] [2019-07-02 19:40:49] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 18:24:53 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 19:40:49] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing Root WebApplicationContext: startup date [Tue Jul 02 18:24:51 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:48] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | 
+Root WebApplicationContext: initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:48] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing Root WebApplicationContext: startup date [Tue Jul 02 20:52:48 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:48] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/spring-mybatis.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:49] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | 
+Loading properties file from class path resource [jdbc.properties]
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:50] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | 
+Root WebApplicationContext: initialization completed in 1937 ms
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:50] org.springframework.web.servlet.FrameworkServlet.initServletBean(479) | 
+FrameworkServlet 'springMVC': initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:50] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 20:52:50 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:50] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/springMvc.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAllPOST],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAllPost(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAll(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/addArticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.addArticle(int,java.lang.String,java.lang.String,int)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/scenicList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.scenicList()
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/commitComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.commitComment(int,int,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectAllCommentByScenicId],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectAllCommentByScenicId(int)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleById],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleById(int)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.register(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/userList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.userList()
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.login(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/insertUserByCsv],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.insertUserByCsv()
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/isexist],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.isexist(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ResourceListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getResourceListing(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs/{swaggerGroup}/{apiDeclaration}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ApiListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getApiListing(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:51] org.hibernate.validator.internal.util.Version.<clinit>(30) | 
+HV000001: Hibernate Validator 5.2.4.Final
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:52] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/swagger/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(33) | 
+Context refreshed
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(46) | 
+Found custom SwaggerSpringMvcPlugins
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(50) | 
+initializing plugin bean customImplementation
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scan(55) | 
+Scanning for api listing references
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAllPost was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAllPost belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAllPost
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAll was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAll belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAll
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method addArticle was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: addArticle belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:addArticle
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method scenicList was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: scenicList belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:scenicList
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method commitComment was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: commitComment belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:commitComment
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectAllCommentByScenicId was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectAllCommentByScenicId belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectAllCommentByScenicId
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleById was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleById belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleById
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method register was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:register
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method userList was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: userList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:userList
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method login was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:login
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method insertUserByCsv was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: insertUserByCsv belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:insertUserByCsv
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method isexist was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: isexist belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:isexist
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/article-controller Description: article-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:53] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:54] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(89) | 
+Added a resource listing with (2) api resources: 
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:54] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  Article Controller at location: /api-docs/default/article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:54] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  User Controller at location: /api-docs/default/user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 20:52:54] org.springframework.web.servlet.FrameworkServlet.initServletBean(498) | 
+FrameworkServlet 'springMVC': initialization completed in 4399 ms
+[NEW_war_exploded] [INFO] [2019-07-02 20:54:26] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 20:52:50 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 20:54:26] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing Root WebApplicationContext: startup date [Tue Jul 02 20:52:48 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:54] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | 
+Root WebApplicationContext: initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:54] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing Root WebApplicationContext: startup date [Tue Jul 02 21:01:54 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:54] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/spring-mybatis.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:54] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | 
+Loading properties file from class path resource [jdbc.properties]
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:55] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | 
+Root WebApplicationContext: initialization completed in 1508 ms
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:55] org.springframework.web.servlet.FrameworkServlet.initServletBean(479) | 
+FrameworkServlet 'springMVC': initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:55] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 21:01:55 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:55] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/springMvc.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAllPOST],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAllPost(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/addArticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.addArticle(int,java.lang.String,java.lang.String,int)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/scenicList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.scenicList()
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/commitComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.commitComment(int,int,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAll(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleById],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleById(int)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectAllCommentByScenicId],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectAllCommentByScenicId(int)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.register(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/userList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.userList()
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.login(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/insertUserByCsv],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.insertUserByCsv()
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/isexist],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.isexist(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ResourceListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getResourceListing(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs/{swaggerGroup}/{apiDeclaration}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ApiListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getApiListing(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:57] org.hibernate.validator.internal.util.Version.<clinit>(30) | 
+HV000001: Hibernate Validator 5.2.4.Final
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:58] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:58] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/swagger/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(33) | 
+Context refreshed
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(46) | 
+Found custom SwaggerSpringMvcPlugins
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(50) | 
+initializing plugin bean customImplementation
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scan(55) | 
+Scanning for api listing references
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAllPost was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAllPost belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAllPost
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method addArticle was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: addArticle belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:addArticle
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method scenicList was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: scenicList belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:scenicList
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method commitComment was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: commitComment belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:commitComment
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAll was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAll belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAll
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleById was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleById belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleById
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectAllCommentByScenicId was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectAllCommentByScenicId belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectAllCommentByScenicId
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method register was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:register
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method userList was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: userList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:userList
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method login was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:login
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method insertUserByCsv was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: insertUserByCsv belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:insertUserByCsv
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method isexist was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: isexist belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:isexist
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/article-controller Description: article-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 21:01:59] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 21:02:00] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(89) | 
+Added a resource listing with (2) api resources: 
+[NEW_war_exploded] [INFO] [2019-07-02 21:02:00] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  Article Controller at location: /api-docs/default/article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:02:00] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  User Controller at location: /api-docs/default/user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:02:00] org.springframework.web.servlet.FrameworkServlet.initServletBean(498) | 
+FrameworkServlet 'springMVC': initialization completed in 4619 ms
+[NEW_war_exploded] [INFO] [2019-07-02 21:24:42] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 21:01:55 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 21:24:42] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing Root WebApplicationContext: startup date [Tue Jul 02 21:01:54 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 21:24:58] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | 
+Root WebApplicationContext: initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 21:24:58] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing Root WebApplicationContext: startup date [Tue Jul 02 21:24:58 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 21:24:58] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/spring-mybatis.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 21:24:59] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | 
+Loading properties file from class path resource [jdbc.properties]
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:00] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | 
+Root WebApplicationContext: initialization completed in 1763 ms
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:00] org.springframework.web.servlet.FrameworkServlet.initServletBean(479) | 
+FrameworkServlet 'springMVC': initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:00] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 21:25:00 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:00] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/springMvc.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleById],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleById(int)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectAllCommentByScenicId],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectAllCommentByScenicId(int)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAll(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/commitComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.commitComment(int,int,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/addArticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.addArticle(int,java.lang.String,java.lang.String,int)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/scenicList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.scenicList()
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAllPOST],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAllPost(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.register(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/userList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.userList()
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.login(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/insertUserByCsv],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.insertUserByCsv()
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/isexist],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.isexist(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs/{swaggerGroup}/{apiDeclaration}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ApiListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getApiListing(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ResourceListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getResourceListing(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:01] org.hibernate.validator.internal.util.Version.<clinit>(30) | 
+HV000001: Hibernate Validator 5.2.4.Final
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:02] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:02] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/swagger/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(33) | 
+Context refreshed
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(46) | 
+Found custom SwaggerSpringMvcPlugins
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(50) | 
+initializing plugin bean customImplementation
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scan(55) | 
+Scanning for api listing references
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleById was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleById belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleById
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectAllCommentByScenicId was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectAllCommentByScenicId belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectAllCommentByScenicId
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAll was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAll belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAll
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method commitComment was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: commitComment belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:commitComment
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method addArticle was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: addArticle belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:addArticle
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method scenicList was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: scenicList belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:scenicList
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAllPost was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAllPost belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAllPost
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method register was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:register
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method userList was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: userList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:userList
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method login was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:login
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method insertUserByCsv was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: insertUserByCsv belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:insertUserByCsv
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method isexist was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: isexist belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:isexist
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/article-controller Description: article-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:03] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:04] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(89) | 
+Added a resource listing with (2) api resources: 
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:04] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  Article Controller at location: /api-docs/default/article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:04] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  User Controller at location: /api-docs/default/user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 21:25:04] org.springframework.web.servlet.FrameworkServlet.initServletBean(498) | 
+FrameworkServlet 'springMVC': initialization completed in 4487 ms
+[NEW_war_exploded] [INFO] [2019-07-02 21:48:46] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 21:25:00 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 21:48:46] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing Root WebApplicationContext: startup date [Tue Jul 02 21:24:58 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:03] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | 
+Root WebApplicationContext: initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:04] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing Root WebApplicationContext: startup date [Tue Jul 02 23:12:04 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:04] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/spring-mybatis.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:04] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | 
+Loading properties file from class path resource [jdbc.properties]
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:05] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | 
+Root WebApplicationContext: initialization completed in 1834 ms
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:05] org.springframework.web.servlet.FrameworkServlet.initServletBean(479) | 
+FrameworkServlet 'springMVC': initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:05] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 23:12:05 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:05] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/springMvc.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/commitComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.commitComment(int,int,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAll(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/addArticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.addArticle(int,java.lang.String,java.lang.String,int)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/scenicList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.scenicList()
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleById],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleById(int)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectAllCommentByScenicId],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectAllCommentByScenicId(int)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAllPOST],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAllPost(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.register(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/userList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.userList()
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.login(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/insertUserByCsv],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.insertUserByCsv()
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/isexist],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.isexist(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ResourceListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getResourceListing(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs/{swaggerGroup}/{apiDeclaration}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ApiListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getApiListing(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:16] org.hibernate.validator.internal.util.Version.<clinit>(30) | 
+HV000001: Hibernate Validator 5.2.4.Final
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/swagger/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(33) | 
+Context refreshed
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(46) | 
+Found custom SwaggerSpringMvcPlugins
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(50) | 
+initializing plugin bean customImplementation
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scan(55) | 
+Scanning for api listing references
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method commitComment was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: commitComment belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:commitComment
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAll was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAll belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAll
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method addArticle was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: addArticle belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:addArticle
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method scenicList was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: scenicList belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:scenicList
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleById was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleById belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleById
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectAllCommentByScenicId was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectAllCommentByScenicId belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectAllCommentByScenicId
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAllPost was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAllPost belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAllPost
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method register was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:register
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method userList was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: userList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:userList
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method login was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:login
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method insertUserByCsv was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: insertUserByCsv belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:insertUserByCsv
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method isexist was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: isexist belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:isexist
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/article-controller Description: article-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:17] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:19] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(89) | 
+Added a resource listing with (2) api resources: 
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:19] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  Article Controller at location: /api-docs/default/article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:19] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  User Controller at location: /api-docs/default/user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:12:19] org.springframework.web.servlet.FrameworkServlet.initServletBean(498) | 
+FrameworkServlet 'springMVC': initialization completed in 13329 ms
+[NEW_war_exploded] [INFO] [2019-07-02 23:17:32] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 23:12:05 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 23:17:32] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing Root WebApplicationContext: startup date [Tue Jul 02 23:12:04 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:16] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | 
+Root WebApplicationContext: initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:17] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing Root WebApplicationContext: startup date [Tue Jul 02 23:30:17 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:17] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/spring-mybatis.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:17] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | 
+Loading properties file from class path resource [jdbc.properties]
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:18] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | 
+Root WebApplicationContext: initialization completed in 1655 ms
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:18] org.springframework.web.servlet.FrameworkServlet.initServletBean(479) | 
+FrameworkServlet 'springMVC': initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:18] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 23:30:18 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:18] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/springMvc.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAll(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/scenicList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.scenicList()
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/commitComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.commitComment(int,int,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/addArticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.addArticle(int,java.lang.String,java.lang.String,int)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAllPOST],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAllPost(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleById],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleById(int)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectAllCommentByScenicId],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectAllCommentByScenicId(int)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.register(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/userList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.userList()
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.login(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/isexist],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.isexist(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/insertUserByCsv],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.insertUserByCsv()
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ResourceListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getResourceListing(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs/{swaggerGroup}/{apiDeclaration}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ApiListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getApiListing(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:20] org.hibernate.validator.internal.util.Version.<clinit>(30) | 
+HV000001: Hibernate Validator 5.2.4.Final
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:21] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:21] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/swagger/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(33) | 
+Context refreshed
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(46) | 
+Found custom SwaggerSpringMvcPlugins
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(50) | 
+initializing plugin bean customImplementation
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scan(55) | 
+Scanning for api listing references
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAll was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAll belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAll
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method scenicList was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: scenicList belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:scenicList
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method commitComment was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: commitComment belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:commitComment
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method addArticle was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: addArticle belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:addArticle
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAllPost was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAllPost belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAllPost
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleById was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleById belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleById
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectAllCommentByScenicId was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectAllCommentByScenicId belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectAllCommentByScenicId
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method register was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:register
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method userList was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: userList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:userList
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method login was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:login
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method isexist was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: isexist belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:isexist
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method insertUserByCsv was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: insertUserByCsv belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:insertUserByCsv
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/article-controller Description: article-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:22] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:23] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(89) | 
+Added a resource listing with (2) api resources: 
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:23] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  Article Controller at location: /api-docs/default/article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:23] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  User Controller at location: /api-docs/default/user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:30:23] org.springframework.web.servlet.FrameworkServlet.initServletBean(498) | 
+FrameworkServlet 'springMVC': initialization completed in 4819 ms
+[NEW_war_exploded] [INFO] [2019-07-02 23:51:45] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 23:30:18 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 23:51:45] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing Root WebApplicationContext: startup date [Tue Jul 02 23:30:17 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:02] org.springframework.web.context.ContextLoader.initWebApplicationContext(285) | 
+Root WebApplicationContext: initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:02] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing Root WebApplicationContext: startup date [Tue Jul 02 23:52:02 CST 2019]; root of context hierarchy
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:02] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/spring-mybatis.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:03] org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(172) | 
+Loading properties file from class path resource [jdbc.properties]
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:04] org.springframework.web.context.ContextLoader.initWebApplicationContext(325) | 
+Root WebApplicationContext: initialization completed in 1765 ms
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:04] org.springframework.web.servlet.FrameworkServlet.initServletBean(479) | 
+FrameworkServlet 'springMVC': initialization started
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:04] org.springframework.context.support.AbstractApplicationContext.prepareRefresh(513) | 
+Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 23:52:04 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:04] org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(316) | 
+Loading XML bean definitions from URL [file:/D:/Documents/Desktop/666/人生地图/NEW/out/artifacts/NEW_war_exploded/WEB-INF/classes/springMvc.xml]
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/addArticle],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.addArticle(int,java.lang.String,java.lang.String,int)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/commitComment],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.commitComment(int,int,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAll],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAll(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/scenicList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.scenicList()
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleAllPOST],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleAllPost(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectAllCommentByScenicId],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectAllCommentByScenicId(int)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/article/selectArticleById],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.ArticleController.selectArticleById(int)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/register],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.register(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/userList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.userList()
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.login(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/insertUserByCsv],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.insertUserByCsv()
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/user/isexist],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.dc.base.pojo.BaseModel com.dc.controller.UserController.isexist(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs/{swaggerGroup}/{apiDeclaration}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ApiListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getApiListing(java.lang.String,java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(182) | 
+Mapped "{[/api-docs],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<com.mangofactory.swagger.models.dto.ResourceListing> com.mangofactory.swagger.controllers.DefaultSwaggerController.getResourceListing(java.lang.String)
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:05] org.hibernate.validator.internal.util.Version.<clinit>(30) | 
+HV000001: Hibernate Validator 5.2.4.Final
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:06] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:06] org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(315) | 
+Mapped URL path [/swagger/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(33) | 
+Context refreshed
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(46) | 
+Found custom SwaggerSpringMvcPlugins
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.plugin.SwaggerPluginAdapter.onApplicationEvent(50) | 
+initializing plugin bean customImplementation
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scan(55) | 
+Scanning for api listing references
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method addArticle was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: addArticle belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:addArticle
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method commitComment was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: commitComment belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:commitComment
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAll was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAll belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAll
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method scenicList was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: scenicList belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:scenicList
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleAllPost was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleAllPost belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleAllPost
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectAllCommentByScenicId was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectAllCommentByScenicId belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectAllCommentByScenicId
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method selectArticleById was article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: selectArticleById belongs to groups: [[ResourceGroup{groupName='article-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='article-controller', position=0} with description:Article Controller for handler method:selectArticleById
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method register was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: register belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:register
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method userList was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: userList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:userList
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method login was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: login belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:login
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method insertUserByCsv was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: insertUserByCsv belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:insertUserByCsv
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.ClassOrApiAnnotationResourceGrouping.getResourceGroups(50) | 
+Group for method isexist was user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(78) | 
+Request mapping: isexist belongs to groups: [[ResourceGroup{groupName='user-controller', position=0}]] 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(82) | 
+Adding resource to group:ResourceGroup{groupName='user-controller', position=0} with description:User Controller for handler method:isexist
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.core.RequestMappingEvaluator.hasIgnoredAnnotatedRequestMapping(74) | 
+Excluding method as it contains the excluded annotation: interface com.mangofactory.swagger.annotations.ApiIgnore
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/article-controller Description: article-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:07] com.mangofactory.swagger.scanners.ApiListingReferenceScanner.scanSpringRequestMappings(96) | 
+Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:08] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(89) | 
+Added a resource listing with (2) api resources: 
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:08] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  Article Controller at location: /api-docs/default/article-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:08] com.mangofactory.swagger.core.SwaggerApiResourceListing.initialize(93) | 
+  User Controller at location: /api-docs/default/user-controller
+[NEW_war_exploded] [INFO] [2019-07-02 23:52:08] org.springframework.web.servlet.FrameworkServlet.initServletBean(498) | 
+FrameworkServlet 'springMVC': initialization completed in 4231 ms
+[NEW_war_exploded] [INFO] [2019-07-02 23:53:37] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing WebApplicationContext for namespace 'springMVC-servlet': startup date [Tue Jul 02 23:52:04 CST 2019]; parent: Root WebApplicationContext
+[NEW_war_exploded] [INFO] [2019-07-02 23:53:37] org.springframework.context.support.AbstractApplicationContext.doClose(873) | 
+Closing Root WebApplicationContext: startup date [Tue Jul 02 23:52:02 CST 2019]; root of context hierarchy

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dc.mapper.TicketCountMapper" >
+    <resultMap id="BaseResultMap" type="com.dc.pojo.TicketCount" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="train_id" property="trainId" jdbcType="INTEGER" />
+        <result column="ticket_remain" property="ticketRemain" jdbcType="INTEGER" />
+        <result column="order_time" property="orderTime" jdbcType="TIMESTAMP" />
+        <result column="stand_remain" property="standRemain" jdbcType="INTEGER" />
+        <result column="second_remain" property="secondRemain" jdbcType="INTEGER" />
+        <result column="first_remain" property="firstRemain" jdbcType="INTEGER" />
+        <result column="business_remain" property="businessRemain" jdbcType="INTEGER" />
+        <result column="soft_sleeper_remain" property="softSleeperRemain" jdbcType="INTEGER" />
+        <result column="advanced_soft_remain" property="advancedSoftRemain" jdbcType="INTEGER" />
+        <result column="highspeed_sleeper_remain" property="highspeedSleeperRemain" jdbcType="INTEGER" />
+        <result column="hard_sleeper_remain" property="hardSleeperRemain" jdbcType="INTEGER" />
+        <result column="soft_remain" property="softRemain" jdbcType="INTEGER" />
+        <result column="hard_remain" property="hardRemain" jdbcType="INTEGER" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+    id, train_id, ticket_remain, order_time, stand_remain, second_remain, first_remain,
+    business_remain, soft_sleeper_remain, advanced_soft_remain, highspeed_sleeper_remain,
+    hard_sleeper_remain, soft_remain, hard_remain
+  </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from ticket_count
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="searchTicket" resultMap="BaseResultMap" parameterType="java.util.HashMap">
+        select
+        <include refid="Base_Column_List" />
+        from ticket_count
+        where train_id = #{tid, jdbcType=INTEGER} and order_time > #{sTime, jdbcType=DATE}
+        and #{eTime, jdbcType=DATE} > order_time
+    </select>
+    <select id="selectAllGroupByTime" parameterType="java.util.HashMap" resultType="java.util.Date">
+    select order_time
+    from ticket_count
+    where order_time >= #{sTime, jdbcType=TIMESTAMP} and #{eTime, jdbcType=TIMESTAMP} > order_time
+    group by order_time
+  </select>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from ticket_count
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.dc.pojo.TicketCount" >
+    insert into ticket_count (id, train_id, ticket_remain,
+      order_time, stand_remain, second_remain,
+      first_remain, business_remain, soft_sleeper_remain,
+      advanced_soft_remain, highspeed_sleeper_remain,
+      hard_sleeper_remain, soft_remain, hard_remain
+      )
+    values (#{id,jdbcType=INTEGER}, #{trainId,jdbcType=INTEGER}, #{ticketRemain,jdbcType=INTEGER},
+      #{orderTime,jdbcType=TIMESTAMP}, #{standRemain,jdbcType=INTEGER}, #{secondRemain,jdbcType=INTEGER},
+      #{firstRemain,jdbcType=INTEGER}, #{businessRemain,jdbcType=INTEGER}, #{softSleeperRemain,jdbcType=INTEGER},
+      #{advancedSoftRemain,jdbcType=INTEGER}, #{highspeedSleeperRemain,jdbcType=INTEGER},
+      #{hardSleeperRemain,jdbcType=INTEGER}, #{softRemain,jdbcType=INTEGER}, #{hardRemain,jdbcType=INTEGER}
+      )
+  </insert>
+    <insert id="insertSelective" parameterType="com.dc.pojo.TicketCount" >
+        insert into ticket_count
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="trainId != null" >
+                train_id,
+            </if>
+            <if test="ticketRemain != null" >
+                ticket_remain,
+            </if>
+            <if test="orderTime != null" >
+                order_time,
+            </if>
+            <if test="standRemain != null" >
+                stand_remain,
+            </if>
+            <if test="secondRemain != null" >
+                second_remain,
+            </if>
+            <if test="firstRemain != null" >
+                first_remain,
+            </if>
+            <if test="businessRemain != null" >
+                business_remain,
+            </if>
+            <if test="softSleeperRemain != null" >
+                soft_sleeper_remain,
+            </if>
+            <if test="advancedSoftRemain != null" >
+                advanced_soft_remain,
+            </if>
+            <if test="highspeedSleeperRemain != null" >
+                highspeed_sleeper_remain,
+            </if>
+            <if test="hardSleeperRemain != null" >
+                hard_sleeper_remain,
+            </if>
+            <if test="softRemain != null" >
+                soft_remain,
+            </if>
+            <if test="hardRemain != null" >
+                hard_remain,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="trainId != null" >
+                #{trainId,jdbcType=INTEGER},
+            </if>
+            <if test="ticketRemain != null" >
+                #{ticketRemain,jdbcType=INTEGER},
+            </if>
+            <if test="orderTime != null" >
+                #{orderTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="standRemain != null" >
+                #{standRemain,jdbcType=INTEGER},
+            </if>
+            <if test="secondRemain != null" >
+                #{secondRemain,jdbcType=INTEGER},
+            </if>
+            <if test="firstRemain != null" >
+                #{firstRemain,jdbcType=INTEGER},
+            </if>
+            <if test="businessRemain != null" >
+                #{businessRemain,jdbcType=INTEGER},
+            </if>
+            <if test="softSleeperRemain != null" >
+                #{softSleeperRemain,jdbcType=INTEGER},
+            </if>
+            <if test="advancedSoftRemain != null" >
+                #{advancedSoftRemain,jdbcType=INTEGER},
+            </if>
+            <if test="highspeedSleeperRemain != null" >
+                #{highspeedSleeperRemain,jdbcType=INTEGER},
+            </if>
+            <if test="hardSleeperRemain != null" >
+                #{hardSleeperRemain,jdbcType=INTEGER},
+            </if>
+            <if test="softRemain != null" >
+                #{softRemain,jdbcType=INTEGER},
+            </if>
+            <if test="hardRemain != null" >
+                #{hardRemain,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <insert id="insertBatch" parameterType="java.util.List">
+        insert into ticket_count (id, train_id, ticket_remain,
+        order_time, stand_remain, second_remain,
+        first_remain, business_remain, soft_sleeper_remain,
+        advanced_soft_remain, highspeed_sleeper_remain,
+        hard_sleeper_remain, soft_remain, hard_remain
+        )
+        values
+        <foreach collection="list" item="ticketEle" index="index" separator=",">
+            (#{ticketEle.id,jdbcType=INTEGER}, #{ticketEle.trainId,jdbcType=INTEGER}, #{ticketEle.ticketRemain,jdbcType=INTEGER},
+            #{ticketEle.orderTime,jdbcType=TIMESTAMP}, #{ticketEle.standRemain,jdbcType=INTEGER}, #{ticketEle.secondRemain,jdbcType=INTEGER},
+            #{ticketEle.firstRemain,jdbcType=INTEGER}, #{ticketEle.businessRemain,jdbcType=INTEGER}, #{ticketEle.softSleeperRemain,jdbcType=INTEGER},
+            #{ticketEle.advancedSoftRemain,jdbcType=INTEGER}, #{ticketEle.highspeedSleeperRemain,jdbcType=INTEGER},
+            #{ticketEle.hardSleeperRemain,jdbcType=INTEGER}, #{ticketEle.softRemain,jdbcType=INTEGER}, #{ticketEle.hardRemain,jdbcType=INTEGER}
+            )
+        </foreach>
+    </insert>
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.dc.pojo.TicketCount" >
+        update ticket_count
+        <set >
+            <if test="trainId != null" >
+                train_id = #{trainId,jdbcType=INTEGER},
+            </if>
+            <if test="ticketRemain != null" >
+                ticket_remain = #{ticketRemain,jdbcType=INTEGER},
+            </if>
+            <if test="orderTime != null" >
+                order_time = #{orderTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="standRemain != null" >
+                stand_remain = #{standRemain,jdbcType=INTEGER},
+            </if>
+            <if test="secondRemain != null" >
+                second_remain = #{secondRemain,jdbcType=INTEGER},
+            </if>
+            <if test="firstRemain != null" >
+                first_remain = #{firstRemain,jdbcType=INTEGER},
+            </if>
+            <if test="businessRemain != null" >
+                business_remain = #{businessRemain,jdbcType=INTEGER},
+            </if>
+            <if test="softSleeperRemain != null" >
+                soft_sleeper_remain = #{softSleeperRemain,jdbcType=INTEGER},
+            </if>
+            <if test="advancedSoftRemain != null" >
+                advanced_soft_remain = #{advancedSoftRemain,jdbcType=INTEGER},
+            </if>
+            <if test="highspeedSleeperRemain != null" >
+                highspeed_sleeper_remain = #{highspeedSleeperRemain,jdbcType=INTEGER},
+            </if>
+            <if test="hardSleeperRemain != null" >
+                hard_sleeper_remain = #{hardSleeperRemain,jdbcType=INTEGER},
+            </if>
+            <if test="softRemain != null" >
+                soft_remain = #{softRemain,jdbcType=INTEGER},
+            </if>
+            <if test="hardRemain != null" >
+                hard_remain = #{hardRemain,jdbcType=INTEGER},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.dc.pojo.TicketCount" >
+    update ticket_count
+    set train_id = #{trainId,jdbcType=INTEGER},
+      ticket_remain = #{ticketRemain,jdbcType=INTEGER},
+      order_time = #{orderTime,jdbcType=TIMESTAMP},
+      stand_remain = #{standRemain,jdbcType=INTEGER},
+      second_remain = #{secondRemain,jdbcType=INTEGER},
+      first_remain = #{firstRemain,jdbcType=INTEGER},
+      business_remain = #{businessRemain,jdbcType=INTEGER},
+      soft_sleeper_remain = #{softSleeperRemain,jdbcType=INTEGER},
+      advanced_soft_remain = #{advancedSoftRemain,jdbcType=INTEGER},
+      highspeed_sleeper_remain = #{highspeedSleeperRemain,jdbcType=INTEGER},
+      hard_sleeper_remain = #{hardSleeperRemain,jdbcType=INTEGER},
+      soft_remain = #{softRemain,jdbcType=INTEGER},
+      hard_remain = #{hardRemain,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+    <update id="minusBySeatLevel" parameterType="java.util.HashMap" >
+    update ticket_count
+    set  ticket_remain = ticket_remain - 1,
+          ${level} = ${level} - 1
+    where train_id = #{tid,jdbcType=INTEGER} and date (order_time)=#{sTime,jdbcType=DATE}
+  </update>
+
+    <update id="addByOrderTicket" parameterType="java.util.HashMap">
+    update ticket_count
+    set  ticket_remain = ticket_remain + 1,
+         ${level} = ${level} + 1
+    where train_id = #{tid,jdbcType=INTEGER} and id = #{ticketid,jdbcType=INTEGER}
+  </update>
+
+    <select id="searchTicket2" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from ticket_count
+        where train_id = #{0} and date(order_time) = #{1}
+    </select>
+
+</mapper>
+

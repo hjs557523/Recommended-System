@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dc.mapper.OrderTicketMapper" >
+    <resultMap id="BaseResultMap" type="com.dc.pojo.OrderTicket" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="order_time" property="orderTime" jdbcType="TIMESTAMP" />
+        <result column="train_id" property="trainId" jdbcType="INTEGER" />
+        <result column="ticket_price" property="ticketPrice" jdbcType="DECIMAL" />
+        <result column="seat_id" property="seatId" jdbcType="INTEGER" />
+        <result column="seat_type" property="seatType" jdbcType="VARCHAR" />
+        <result column="user_id" property="userId" jdbcType="INTEGER" />
+        <result column="ticket_id" property="ticketId" jdbcType="INTEGER" />
+        <result column="arrive_route_id" property="arriveRouteId" jdbcType="INTEGER" />
+        <result column="depature_route_id" property="depatureRouteId" jdbcType="INTEGER" />
+        <result column="effect" property="effect" jdbcType="INTEGER" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+    id, order_time, train_id, ticket_price, seat_id, seat_type, user_id, ticket_id, arrive_route_id,
+    depature_route_id, effect
+  </sql>
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+        select
+        <include refid="Base_Column_List" />
+        from order_ticket
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from order_ticket
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+    <insert id="insert" parameterType="com.dc.pojo.OrderTicket" >
+    insert into order_ticket (id, order_time, train_id,
+      ticket_price, seat_id, seat_type,
+      user_id, ticket_id, arrive_route_id,
+      depature_route_id, effect)
+    values (#{id,jdbcType=INTEGER}, #{orderTime,jdbcType=TIMESTAMP}, #{trainId,jdbcType=INTEGER},
+      #{ticketPrice,jdbcType=DECIMAL}, #{seatId,jdbcType=INTEGER}, #{seatType,jdbcType=VARCHAR},
+      #{userId,jdbcType=INTEGER}, #{ticketId,jdbcType=INTEGER}, #{arriveRouteId,jdbcType=INTEGER},
+      #{depatureRouteId,jdbcType=INTEGER}, #{effect,jdbcType=INTEGER})
+  </insert>
+    <insert id="insertSelective" parameterType="com.dc.pojo.OrderTicket" >
+        insert into order_ticket
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="orderTime != null" >
+                order_time,
+            </if>
+            <if test="trainId != null" >
+                train_id,
+            </if>
+            <if test="ticketPrice != null" >
+                ticket_price,
+            </if>
+            <if test="seatId != null" >
+                seat_id,
+            </if>
+            <if test="seatType != null" >
+                seat_type,
+            </if>
+            <if test="userId != null" >
+                user_id,
+            </if>
+            <if test="ticketId != null" >
+                ticket_id,
+            </if>
+            <if test="arriveRouteId != null" >
+                arrive_route_id,
+            </if>
+            <if test="depatureRouteId != null" >
+                depature_route_id,
+            </if>
+            <if test="effect != null" >
+                effect,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="orderTime != null" >
+                #{orderTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="trainId != null" >
+                #{trainId,jdbcType=INTEGER},
+            </if>
+            <if test="ticketPrice != null" >
+                #{ticketPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="seatId != null" >
+                #{seatId,jdbcType=INTEGER},
+            </if>
+            <if test="seatType != null" >
+                #{seatType,jdbcType=VARCHAR},
+            </if>
+            <if test="userId != null" >
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="ticketId != null" >
+                #{ticketId,jdbcType=INTEGER},
+            </if>
+            <if test="arriveRouteId != null" >
+                #{arriveRouteId,jdbcType=INTEGER},
+            </if>
+            <if test="depatureRouteId != null" >
+                #{depatureRouteId,jdbcType=INTEGER},
+            </if>
+            <if test="effect != null" >
+                #{effect,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.dc.pojo.OrderTicket" >
+        update order_ticket
+        <set >
+            <if test="orderTime != null" >
+                order_time = #{orderTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="trainId != null" >
+                train_id = #{trainId,jdbcType=INTEGER},
+            </if>
+            <if test="ticketPrice != null" >
+                ticket_price = #{ticketPrice,jdbcType=DECIMAL},
+            </if>
+            <if test="seatId != null" >
+                seat_id = #{seatId,jdbcType=INTEGER},
+            </if>
+            <if test="seatType != null" >
+                seat_type = #{seatType,jdbcType=VARCHAR},
+            </if>
+            <if test="userId != null" >
+                user_id = #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="ticketId != null" >
+                ticket_id = #{ticketId,jdbcType=INTEGER},
+            </if>
+            <if test="arriveRouteId != null" >
+                arrive_route_id = #{arriveRouteId,jdbcType=INTEGER},
+            </if>
+            <if test="depatureRouteId != null" >
+                depature_route_id = #{depatureRouteId,jdbcType=INTEGER},
+            </if>
+            <if test="effect != null" >
+                effect = #{effect,jdbcType=INTEGER},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.dc.pojo.OrderTicket" >
+    update order_ticket
+    set order_time = #{orderTime,jdbcType=TIMESTAMP},
+      train_id = #{trainId,jdbcType=INTEGER},
+      ticket_price = #{ticketPrice,jdbcType=DECIMAL},
+      seat_id = #{seatId,jdbcType=INTEGER},
+      seat_type = #{seatType,jdbcType=VARCHAR},
+      user_id = #{userId,jdbcType=INTEGER},
+      ticket_id = #{ticketId,jdbcType=INTEGER},
+      arrive_route_id = #{arriveRouteId,jdbcType=INTEGER},
+      depature_route_id = #{depatureRouteId,jdbcType=INTEGER},
+      effect = #{effect,jdbcType=INTEGER}
+    where id = #{id,jdbcType = INTEGER}
+  </update>
+
+    <update id="updateTicketEffect" parameterType="java.lang.Integer">
+    update order_ticket
+    set effect = 0
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+
+    <select id="searchHistoryRecord" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List" />
+        from order_ticket
+        where user_id = #{arg0}
+        order by order_time desc
+    </select>
+
+    <select id="searchNeedRefundRecord" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List" />
+        from order_ticket
+        where user_id = #{userid,jdbcType=INTEGER} and effect = 1
+        order by order_time desc
+    </select>
+</mapper>

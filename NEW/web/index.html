@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旅游推荐系统</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">
+            </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">旅游推荐</a></li>
+            <li><a href="/tots/searchTicket.jsp">点击购票</a></li>
+            <li><a href="/tots/userinfo.jsp">个人中心</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="userInfo">
+
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="col-sm-2">
+        <div class="list-group side-bar">
+            <a class="list-group-item active" href="#">全部</a>
+            <a class="list-group-item" href="#">国内</a>
+            <a class="list-group-item" href="#">国外</a>
+        </div>
+    </div>
+    <div class="col-sm-7">
+        <div id="articleList" class="post-list">
+
+        </div>
+        <nav aria-label="Page navigation">
+            <ul class="pagination" id="pageNavi">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <input type="search" class="form-control" placeholder="请输入景点名称" id="searchText"><button type="button"class="form-control" id="searchButton">点击搜索</button>
+        </div>
+        <div class="side-bar-well clearfix">
+            <div class="col-sm-5"><img src="img/2-5.jpg"></div>
+            <div class="col-sm-7">
+                <p class="side-bar-well-title">
+                    软工实践小组
+                </p>
+                <p>我们的邮箱:
+                    duanxueqi@hdu.com</p>
+            </div>
+        </div>
+        <div class="side-bar-well">
+            <strong class="side-bar-well-title">
+                24小时旅游热闻推送
+            </strong>
+            <a href="#" class="news-item">
+                <div class="news-title">Consectetur adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    5.9万次播放 ⋅ 167评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Lorem adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    8.9万次播放 ⋅ 3367评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Consectetur adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    5.9万次播放 ⋅ 167评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Lorem adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    8.9万次播放 ⋅ 3367评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Consectetur adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    5.9万次播放 ⋅ 167评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Lorem adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    8.9万次播放 ⋅ 3367评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Consectetur adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    5.9万次播放 ⋅ 167评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Lorem adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    8.9万次播放 ⋅ 3367评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Consectetur adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    5.9万次播放 ⋅ 167评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Lorem adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    8.9万次播放 ⋅ 3367评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Consectetur adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    5.9万次播放 ⋅ 167评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Lorem adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    8.9万次播放 ⋅ 3367评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Consectetur adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    5.9万次播放 ⋅ 167评论
+                </div>
+            </a>
+            <a href="#" class="news-item">
+                <div class="news-title">Lorem adipisicing elit. Consequuntur aut</div>
+                <div class="news-info">
+                    8.9万次播放 ⋅ 3367评论
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    © 2019 基于隐语义模型的旅游推荐订票系统
+</div>
+</body>
+
+</html>
