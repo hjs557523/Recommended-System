@@ -11,7 +11,7 @@
 2019/7/8：&nbsp;&nbsp;&nbsp;前后端编码&nbsp;&nbsp;&#10003;  
 2019/7/9：&nbsp;&nbsp;&nbsp;前后端编码&nbsp;&nbsp;&#10003;  
 2019/7/10：&nbsp;&nbsp;前后端编码&nbsp;&nbsp;&#10003;  
-2019/7/11：&nbsp;&nbsp;后端编码+完成测试计划报告  
+2019/7/11：&nbsp;&nbsp;后端编码+完成测试计划报告前后端编码&nbsp;&nbsp;&#10003;  
 2019/7/12：&nbsp;&nbsp;完成总实践报告  
 2019/7/13：&nbsp;&nbsp;验收答辩  
 2019/7/14：&nbsp;&nbsp;收拾行李  
