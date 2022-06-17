@@ -37,7 +37,7 @@
     <dependency>
         <groupId>com.alibaba</groupId>
         <artifactId>fastjson</artifactId>
-        <version>1.2.39</version>
+        <version>1.2.83</version>
     </dependency>
 
     <!--返回json格式的字符串依赖-->
